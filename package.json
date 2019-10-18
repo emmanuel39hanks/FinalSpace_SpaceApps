@@ -1,0 +1,26 @@
+{
+  "name": "finalspaceapps",
+  "version": "1.0.0",
+  "description": "Team Final Space show the world the data Space Apps challenge 2019",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuel39hanks/FinalSpace_SpaceApps.git"
+  },
+  "author": "Emmanuel Haankwenda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuel39hanks/FinalSpace_SpaceApps/issues"
+  },
+  "homepage": "https://github.com/emmanuel39hanks/FinalSpace_SpaceApps#readme"
+}
