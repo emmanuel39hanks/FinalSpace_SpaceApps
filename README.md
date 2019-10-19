@@ -1,5 +1,6 @@
 "# FinalSpace_SpaceApps" 
-The project was created for the Space Apps Challenge,
+The project was created for the Space Apps Challenge.
+
 The project is hosted with Firebase and you can view it at: https://final-space-spaceapps.firebaseapp.com/
 
 to run the app locally simply:
