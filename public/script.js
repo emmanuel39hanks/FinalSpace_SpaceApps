@@ -176,3 +176,37 @@ btnSeaSurface.addEventListener('click', event => {
     $.get(serviceAddress).done(createLayer).fail(logError);
 
 })
+
+// Active Fires
+
+let btnActiveFires = document.getElementById("btnActiveFires");
+
+btnActiveFires.addEventListener('click', event => {
+        
+    let modelLayer = new WorldWind.RenderableLayer();
+    wwd.addLayer(modelLayer);
+
+    let serviceAddress = "https://neo.sci.gsfc.nasa.gov/wms/wms?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0";
+
+    let layerName = "MOD14A1_M_FIRE";
+
+    let createLayer = function (xmlDom) {
+        let wms = new WorldWind.WmsCapabilities(xmlDom);
+        let wmsLayerCapabilities = wms.getNamedLayer(layerName);
+        let wmsConfig = WorldWind.WmsLayer.formLayerConfiguration(wmsLayerCapabilities);
+        let wmsLayer = new WorldWind.WmsLayer(wmsConfig);
+        wwd.addLayer(wmsLayer);
+    };
+
+    let logError = function (jqXhr, text, exception) {
+        console.log("There was a failure retrieving the capabilities document: " +
+            text +
+        " exception: " + exception);
+    };
+    
+    show.innerHTML = `Fire is a recurring part of nature. Wildfires can be caused by lightning striking a forest canopy or, in a few isolated cases, by lava or hot rocks ejected from erupting volcanoes. Most fires worldwide are started by humans, sometimes accidentally and sometimes on purpose. Not all fires are bad. Fire clears away dead and dying underbrush, which can help restore forest ecosystems to good health. Humans use fire as a tool in slash-and-burn agriculture to speed up the process of breaking down unwanted vegetation into the soil. Humans also use fire to clear away old-growth forests to make room for living spaces, roads, and fields for raising crops and cattle. But not all fires are good. Wildfires can destroy natural resources and human structures. Globally, fire plays a major role in Earth's carbon cycle by releasing carbon into the air, and by consuming trees that would otherwise absorb carbon from the air during photosynthesis. These maps show the locations of actively burning fires around the world, detected by instruments aboard NASA satellites.`;
+    header1.innerHTML = "What do the colors mean?";
+    colors.innerHTML = "The red, orange, and yellow pixels on these maps show the locations where the MODIS instrument detects actively burning fires. Don't be fooled by sizes of some of the bright splotches on these maps. The colors represent a count of the number of fires observed within a 1,000-square-kilometer area. White pixels show the high end of the count — as many as 30 fires in a 1,000-square-kilometer area per day. Orange pixels show as many as 10 fires while red areas show as few as 1 fire in a 1,000-square-kilometer area per day.";
+    $.get(serviceAddress).done(createLayer).fail(logError);
+
+})

@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .pad {
     padding: 200px;
 }
@@ -10,6 +14,8 @@
     border: none;
     outline: none;
     font-size: 19px;
+    display: block;
+    margin: 10px 0px 0px 5px;
 }
 
 .btn:hover {
@@ -17,3 +23,30 @@
     background-color: rgb(79, 165, 214);
 }
 
+
+.paras {
+
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: rgb(82, 78, 78);
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(255, 255, 255);
+  }

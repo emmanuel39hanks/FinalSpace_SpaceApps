@@ -7,19 +7,22 @@
         <title>Final Space - Space Apps Challenge Show The World The Data</title>
     </head>
     <body>
-        <div>
+        <div class="split left">
         <canvas id="canvasOne" width="1024" height="768">
             Your browser does not support HTML5 Canvas.
         </canvas>
         </div>
+        <div class="split right">
         <button class="btn" id="btnHeatDay">Average Land Surface Temperature [Day]</button>
         <button class="btn" id="btnHeatNight">Average Land Surface Temperature [Night]</button>
         <button class="btn" id="btnVegetationIndex">Vegetation Index</button>
         <button class="btn" id="btnPopulation">Population Density</button>
         <button class="btn" id="btnSeaSurface">Sea Surface Temperature (MODIS, 2002+)</button>
-        <p id="show"></p>
-        <h4 id="header1"></h4>
-        <p id="colors"></p>
+        <button class="btn" id="btnActiveFires">Active Fires</button>
+        <p class="paras" id="show"></p>
+        <h4 class="paras" id="header1"></h4>
+        <p class="paras" id="colors"></p>
+        </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="/__/firebase/7.2.1/firebase-app.js"></script>
 
