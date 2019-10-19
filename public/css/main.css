@@ -1,3 +1,19 @@
 .pad {
     padding: 200px;
 }
+
+.btn {
+    height: 40px;
+    padding: 10px;
+    color: white;
+    background-color: #116d97;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(79, 165, 214);
+}
+

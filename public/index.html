@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="BMNG_world.topo.bathy.200405.3.2048x1024.jpg">
-        <title>Final Space - Space Apps Challenge Show Me The Data</title>
+        <title>Final Space - Space Apps Challenge Show The World The Data</title>
     </head>
     <body>
         <div>
@@ -12,7 +12,23 @@
             Your browser does not support HTML5 Canvas.
         </canvas>
         </div>
+        <button class="btn" id="btnHeatDay">Average Land Surface Temperature [Day]</button>
+        <button class="btn" id="btnHeatNight">Average Land Surface Temperature [Night]</button>
+        <button class="btn" id="btnVegetationIndex">Vegetation Index</button>
+        <button class="btn" id="btnPopulation">Population Density</button>
+        <button class="btn" id="btnSeaSurface">Sea Surface Temperature (MODIS, 2002+)</button>
+        <p id="show"></p>
+        <h4 id="header1"></h4>
+        <p id="colors"></p>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.2.1/firebase-app.js"></script>
 
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.2.1/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script 
         src="https://files.worldwind.arc.nasa.gov/artifactory/web/0.9.0/worldwind.min.js"
