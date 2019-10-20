@@ -2,26 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="BMNG_world.topo.bathy.200405.3.2048x1024.jpg">
         <title>Final Space - Space Apps Challenge Show The World The Data</title>
     </head>
     <body>
         <div class="split left">
-        <canvas id="canvasOne" width="1024" height="768">
+        <canvas class="canvasres" id="canvasOne" width="1024" height="768">
             Your browser does not support HTML5 Canvas.
         </canvas>
         </div>
         <div class="split right">
-        <button class="btn" id="btnHeatDay">Average Land Surface Temperature [Day]</button>
-        <button class="btn" id="btnHeatNight">Average Land Surface Temperature [Night]</button>
-        <button class="btn" id="btnVegetationIndex">Vegetation Index</button>
-        <button class="btn" id="btnPopulation">Population Density</button>
-        <button class="btn" id="btnSeaSurface">Sea Surface Temperature (MODIS, 2002+)</button>
-        <button class="btn" id="btnActiveFires">Active Fires</button>
+        <div class="leftb">
+            <button class="btn" id="btnHeatDay">Average Land Surface Temperature [Day]</button>
+            <button class="btn" id="btnHeatNight">Average Land Surface Temperature [Night]</button>
+            <button class="btn" id="btnRadiation">Outgoing Longwave Radiation</button>
+            <button class="btn" id="btnVegetationIndex">Vegetation Index</button>
+            <button class="btn" id="btnPopulation">Population Density</button>
+            <button class="btn" id="btnActiveFires">Active Fires</button>
+            <button class="btn" id="btnGreen">Greenland / Antarctica Elevation</button>
+        </div>
+        <div class="rightb">
+            <button class="btn" id="btnLeaf">Leaf Area Index</button>
+            <button class="btn" id="btnLandCover">Land Cover Classification</button>
+            <button class="btn" id="btnSeaIce">Sea Ice and Snow Extent, Northern Hemisphere</button>
+            <button class="btn" id="btnSnow">Snow Cover</button>
+            <button class="btn" id="btnNetRadiation">Net Radiation</button>
+            <button class="btn" id="btnShortwave">Reflected Shortwave Radiation</button>
+            <button class="btn" id="btnSolar">Solar Insolation</button>
+        </div>
+        <div class="clr-fix"></div>
+        <div class="paras-pad">
         <p class="paras" id="show"></p>
         <h4 class="paras" id="header1"></h4>
         <p class="paras" id="colors"></p>
+        <p>Emmanuel Haankwenda - Space Apps Challenge. Globe Images provided by <a href="https://neo.sci.gsfc.nasa.gov/" target="_blank">NEO</a>.</p>
+        </div>
+
         </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="/__/firebase/7.2.1/firebase-app.js"></script>

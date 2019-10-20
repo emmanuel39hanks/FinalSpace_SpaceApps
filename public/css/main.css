@@ -2,20 +2,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.pad {
-    padding: 200px;
-}
-
 .btn {
-    height: 40px;
-    padding: 10px;
+    height: 35px;
+    padding: 8px;
     color: white;
     background-color: #116d97;
     border: none;
     outline: none;
-    font-size: 19px;
     display: block;
-    margin: 10px 0px 0px 5px;
+    margin: 8px 0px 0px 5px;
+    border-radius: 5px;
+    
 }
 
 .btn:hover {
@@ -25,7 +22,13 @@ body {
 
 
 .paras {
+  margin: 11px 4px 0px 0px;
+  color: #0c597c;
+  font-size: 17.6px;
+}
 
+.paras-pad {
+  padding: 10px;
 }
 
 /* Split the screen in half */
@@ -36,7 +39,8 @@ body {
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 10px;
+    
   }
   
   /* Control the left side */
@@ -49,4 +53,26 @@ body {
   .right {
     right: 0;
     background-color: rgb(255, 255, 255);
+  }
+
+  .leftb {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .rightb {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .clr-fix {
+    clear: both;
+  }
+
+  .canvasres {
+    width: 100%;
+    height: 97%;
+    
   }
