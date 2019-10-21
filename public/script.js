@@ -16,7 +16,17 @@ let show = document.getElementById("show");
 let header1 = document.getElementById("header1");
 let colors = document.getElementById("colors");
 btnHeatDay.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -47,7 +57,17 @@ btnHeatDay.addEventListener('click', event => {
 let btnHeatNight = document.getElementById("btnHeatNight");
 
 btnHeatNight.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+    
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -81,7 +101,17 @@ btnHeatNight.addEventListener('click', event => {
 let btnVegetationIndex = document.getElementById("btnVegetationIndex");
 
 btnVegetationIndex.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -114,7 +144,17 @@ btnVegetationIndex.addEventListener('click', event => {
 let btnPopulation = document.getElementById("btnPopulation");
 
 btnPopulation.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -147,7 +187,17 @@ btnPopulation.addEventListener('click', event => {
 let btnRadiation = document.getElementById("btnRadiation");
 
 btnRadiation.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -181,7 +231,17 @@ btnRadiation.addEventListener('click', event => {
 let btnActiveFires = document.getElementById("btnActiveFires");
 
 btnActiveFires.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -216,7 +276,17 @@ btnActiveFires.addEventListener('click', event => {
 let btnGreen = document.getElementById("btnGreen");
 
 btnGreen.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -250,7 +320,17 @@ btnGreen.addEventListener('click', event => {
 let btnLeaf = document.getElementById("btnLeaf");
 
 btnLeaf.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -284,7 +364,17 @@ btnLeaf.addEventListener('click', event => {
 let btnLandCover = document.getElementById("btnLandCover");
 
 btnLandCover.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -319,7 +409,17 @@ btnLandCover.addEventListener('click', event => {
 let btnSeaIce = document.getElementById("btnSeaIce");
 
 btnSeaIce.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -354,7 +454,17 @@ btnSeaIce.addEventListener('click', event => {
 let btnSnow = document.getElementById("btnSnow");
 
 btnSnow.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -387,7 +497,17 @@ btnSnow.addEventListener('click', event => {
 let btnNetRadiation = document.getElementById("btnNetRadiation");
 
 btnNetRadiation.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -421,7 +541,17 @@ btnNetRadiation.addEventListener('click', event => {
 let btnShortwave = document.getElementById("btnShortwave");
 
 btnShortwave.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
@@ -456,7 +586,17 @@ btnShortwave.addEventListener('click', event => {
 let btnSolar = document.getElementById("btnSolar");
 
 btnSolar.addEventListener('click', event => {
-        
+    wwd.addLayer(new WorldWind.BMNGOneImageLayer());
+    wwd.addLayer(new WorldWind.BMNGLandsatLayer());
+
+    // Create and add a compass and view controls.
+    wwd.addLayer(new WorldWind.CompassLayer());
+    wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
+    wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
+
+    // Update the display.
+    wwd.redraw();    
+
     let modelLayer = new WorldWind.RenderableLayer();
     wwd.addLayer(modelLayer);
 
